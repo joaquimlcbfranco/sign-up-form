@@ -97,7 +97,7 @@ body {
     border-top-left-radius: 30% 40%;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5),
             0px 0px 10px rgba(0, 0, 0, 1) inset;
-    background-color: rgb(242, 243, 244, 1);
+    background-color: rgb(242, 243, 244, 0.95);
 }
 
 .left-wrapper {
@@ -129,10 +129,6 @@ body {
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
 }
 
-.form-description {
-    
-}
-
 .form-description span {
     color: rgb(0, 94, 255);
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3); 
@@ -150,7 +146,7 @@ body {
 
 .form-header {
     text-align: center;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 .form-header > .form-title {
@@ -167,6 +163,7 @@ body {
 .form-wrapper {
     display: flex;
     flex: 1;
+    margin-top: 10px;
 }
 
 .form-column {
@@ -192,11 +189,23 @@ body {
 }
 
 .form-row input {
-    border: 1px solid rgb(0, 74, 117);
+    border: 1.5px solid rgb(0, 74, 117);
     border-radius: 0.5rem;
     background: none;
     padding: 2px;
+    outline: none;
+    transition: all 160ms ease-in;
     text-align: center;
+    font-size: calc(0.7rem + 0.2vh);
+    font-family:"Montserrat", "Poiret One", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.form-row input:hover {
+    border: 1.5px solid rgb(0, 109, 172);
+}
+
+.form-row input:focus {
+    border: 1.5px solid rgb(2, 143, 225);
 }
 
 .form-row label {
