@@ -80,7 +80,26 @@ a:hover::after {
     width: 100%;
 }
 
+.left-footer a {
+    position: relative;
+    color: rgb(184, 184, 184);
+    text-decoration: none;
+}
 
+.left-footer a::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background: rgb(184, 184, 184);
+    transition: all 0.2s;
+}
+
+.left-footer a:hover::after {
+    width: 100%;
+}
 
 .image {
     position: absolute;
@@ -105,7 +124,6 @@ a:hover::after {
     justify-content: center;
     align-items: center;
     flex: 2;
-    border-top-right-radius: 5% 10%;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
     color: rgb(242, 243, 244);
     background-color: rgba(0, 42, 66, 0.9);
@@ -117,15 +135,13 @@ a:hover::after {
     justify-content: center;
     align-items: center;
     flex: 3;
-    margin-left: -30px;
-    border-top-left-radius: 30% 40%;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
     background-color: rgb(242, 243, 244, 0.95);
 }
 
 .left-wrapper {
     background-color: rgba(0, 0, 0, 0.2);
-    padding: 15px;
+    padding: 25px;
     border-radius: 2px;
     width: 100%;
 }
@@ -152,19 +168,25 @@ a:hover::after {
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
 }
 
-.form-description span {
-    color: rgb(0, 94, 255);
-    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3); 
-}
-
 .section-description span:hover,
 .form-description span:hover {
     color: rgb(0, 238, 255);
 }
 
+.left-footer {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 15px;
+}
+
 .form-description span:hover {
     color: rgb(34, 113, 248);
 
+}
+
+.form-description span {
+    color: rgb(0, 94, 255);
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3); 
 }
 
 .form-header {
@@ -261,10 +283,10 @@ a:hover::after {
     height: 25px;
     padding: 2px;
     border-radius: 0.5rem;
-    border: 1px solid rgb(0, 74, 117);
+    border:1px solid rgb(2, 143, 225);
     /*background-color: rgb(0, 74, 117);*/
     background: none;
-    color: rgb(0, 74, 117);
+    color: rgb(2, 143, 225);
     font-size: calc(0.7rem + 0.2vh);
     font-family:"Montserrat", "Poiret One", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
@@ -296,29 +318,29 @@ a:hover::after {
 .form-row > button:hover::after {
     content: "sign up";
     width: 100%;
-    background: rgb(0, 74, 117);
+    background: rgb(2, 143, 225);
     color: rgb(242, 243, 244);
 }
 
 .form-row > button:hover::before {
     width: 100%;
-    background: rgb(0, 74, 117);
+    background: rgb(2, 143, 225);
     color: rgb(242, 243, 244);
 }
 
 .form-row > button:active::after {
-    background-color: rgb(2, 143, 225);
+    background-color: rgb(0, 109, 172);
     border-radius: 0.5rem;
 }
 
 .form-row > button:active::before {
-    background-color: rgb(2, 143, 225);
+    background-color: rgb(0, 109, 172);
     border-radius: 0.5rem;
 }
 
 .form-row > button:active {
-    background-color: rgb(2, 143, 225);
-    border: rgb(2, 143, 225);
+    background-color: rgb(0, 109, 172);
+    border: rgb(0, 109, 172);
 }
 
 /*
