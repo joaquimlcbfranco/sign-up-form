@@ -95,8 +95,7 @@ body {
     flex: 3;
     margin-left: -30px;
     border-top-left-radius: 30% 40%;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5),
-            0px 0px 10px rgba(0, 0, 0, 1) inset;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
     background-color: rgb(242, 243, 244, 0.95);
 }
 
@@ -164,6 +163,8 @@ body {
     display: flex;
     flex: 1;
     margin-top: 10px;
+    width: 100%;
+    justify-content: center;
 }
 
 .form-column {
@@ -184,28 +185,41 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 35px;
-    position: relative;
+    margin-top: 15px;
+}
+
+.form-row > .required {
+    align-self: flex-end;
+    text-align: center;
+    margin-bottom: 3px;
+    padding: 3px;
+    color: white;
+    background-color: rgb(0, 74, 117);
+    border-radius: 25% 5%;
+    font-weight: 600;
+    font-size: calc(0.5rem + 0.2vh);
+    font-family:"Montserrat", "Poiret One", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .form-row input {
-    border: 1.5px solid rgb(0, 74, 117);
+    border: 1px solid rgb(0, 74, 117);
     border-radius: 0.5rem;
     background: none;
     padding: 2px;
     outline: none;
     transition: all 160ms ease-in;
     text-align: center;
+    font-weight: 300;
     font-size: calc(0.7rem + 0.2vh);
     font-family:"Montserrat", "Poiret One", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .form-row input:hover {
-    border: 1.5px solid rgb(0, 109, 172);
+    border: 1px solid rgb(0, 109, 172);
 }
 
 .form-row input:focus {
-    border: 1.5px solid rgb(2, 143, 225);
+    border: 1px solid rgb(2, 143, 225);
 }
 
 .form-row label {
@@ -215,4 +229,21 @@ body {
     font-family:"Montserrat", "Poiret One", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
+.form-row > button {
+    cursor: pointer;
+    margin-top: 23px;
+    width: 145px;
+    height: 25px;
+    padding: 2px;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(0, 74, 117);
+    background: rgb(0, 74, 117);
+    color: rgb(242, 243, 244);
+    font-size: calc(0.7rem + 0.2vh);
+    font-family:"Montserrat", "Poiret One", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    transition: all 160ms ease-in;
+}
 
+.form-row > button:hover {
+    transform: translateY(calc(-1px - 0.3vh));
+}
