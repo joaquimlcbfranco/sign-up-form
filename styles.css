@@ -141,7 +141,7 @@ a:hover::after {
 
 .left-wrapper {
     background-color: rgba(0, 0, 0, 0.2);
-    padding: 25px;
+    padding: 15px;
     border-radius: 2px;
     width: 100%;
 }
@@ -159,7 +159,8 @@ a:hover::after {
 .section-description {
     font-family:"Montserrat", "Poiret One", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 300;
-    font-size: calc(0.9rem + 0.2vh);
+    margin-top: 15px;
+    font-size: calc(0.75rem + 0.2vh);
     text-align: center;
 }
 
@@ -278,7 +279,7 @@ a:hover::after {
 .form-row > button {
     position: relative;
     cursor: pointer;
-    margin-top: 23px;
+    margin-top: 25px;
     width: 145px;
     height: 25px;
     padding: 2px;
